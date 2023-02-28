@@ -336,8 +336,25 @@ countries = [
   'Zambia',
   'Zimbabwe',
 ]
-n = len(countries)
-if n % 2 == 0  
+print(len(countries))
+middle_country = countries[len(countries)//2]
+print(middle_country) 
+
+first_half = countries[0:countries.index('Lesotho')+2]
+Second_half = countries[countries.index('Lesotho')+2:]
+print('Fisrt Half is: ', first_half)
+print('second Half is: ', Second_half)
+
+print(len(countries)/2)
+first_half = countries[0:countries.index('Lesotho')+1]
+Second_half = countries[countries.index('Lesotho')+1:]
+print('length first half:', len(first_half))
+print('Length Second Half:', len(Second_half))
+
+countries = ['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']
+fisrt_counrty, second_counrty,third_countrty, *scandic_countries = countries
+print('Scandic countries: ',scandic_countries)
+
 
 
 
